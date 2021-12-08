@@ -1592,6 +1592,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nginx/" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-nim/" class="md-nav__link">
       Nim
     </a>
@@ -1748,6 +1761,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-pylsp/" class="md-nav__link">
+      Python (Pylsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
@@ -1762,7 +1788,7 @@
 
   <li class="md-nav__item">
     <a href="../lsp-pyls/" class="md-nav__link">
-      Python (Palantir)
+      Python (Palantir deprecated)
     </a>
   </li>
 
@@ -2072,6 +2098,13 @@
           <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-cargo-run-build-scripts" class="md-nav__link">
     lsp-rust-analyzer-cargo-run-build-scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-cargo-unset-test" class="md-nav__link">
+    lsp-rust-analyzer-cargo-unset-test
   </a>
   
 </li>
@@ -2537,6 +2570,19 @@
   <li class="md-nav__item">
     <a href="../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-toml/" class="md-nav__link">
+      TOML
     </a>
   </li>
 
@@ -3228,6 +3274,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-cargo-unset-test" class="md-nav__link">
+    lsp-rust-analyzer-cargo-unset-test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-cargo-watch-args" class="md-nav__link">
     lsp-rust-analyzer-cargo-watch-args
   </a>
@@ -3707,6 +3760,11 @@ The command should include <code>--message=format=json</code> or similar option.
 <p><em>Default:</em> <code>t</code></p>
 <p>Whether to run build scripts (<code>build.rs</code>) for more precise code analysis.</p>
 <hr />
+<h3 id="lsp-rust-analyzer-cargo-unset-test"><code>lsp-rust-analyzer-cargo-unset-test</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-unset-test" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Default:</em> <code>[]</code></p>
+<p>force rust-analyzer to unset <code>#[cfg(test)]</code> for the specified crates.</p>
+<hr />
 <h3 id="lsp-rust-analyzer-cargo-watch-args"><code>lsp-rust-analyzer-cargo-watch-args</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-watch-args" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>lsp-string-vector</code></p>
 <p><em>Default:</em> <code>[]</code></p>
@@ -3982,7 +4040,7 @@ compiling unnecessary things.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2021</span>
     
   </small>
 </div>

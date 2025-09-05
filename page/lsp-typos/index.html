@@ -3852,7 +3852,7 @@
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
 <h3 id="lsp-typos-config"><code>lsp-typos-config</code><a class="headerlink" href="#lsp-typos-config" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(or (string :tag Toml File Path) (const :tag None nil))</code></p>
+<p><em>Type:</em> <code>(choice (const :tag None nil) (string :tag Toml File Path))</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Path to toml config file.</p>
 <hr />

@@ -3753,6 +3753,40 @@
     Available configurations
   </a>
   
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-typos-config" class="md-nav__link">
+    lsp-typos-config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-typos-diagnostic-severity" class="md-nav__link">
+    lsp-typos-diagnostic-severity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-typos-enable" class="md-nav__link">
+    lsp-typos-enable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-typos-path" class="md-nav__link">
+    lsp-typos-path
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -3817,6 +3851,27 @@
 <p><code>cargo install --git https://github.com/tekumara/typos-lsp typos-lsp</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-typos-config"><code>lsp-typos-config</code><a class="headerlink" href="#lsp-typos-config" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(or (string :tag Toml File Path) (const :tag None nil))</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Path to toml config file.</p>
+<hr />
+<h3 id="lsp-typos-diagnostic-severity"><code>lsp-typos-diagnostic-severity</code><a class="headerlink" href="#lsp-typos-diagnostic-severity" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (const :tag Error Error) (const :tag Warning Warning) (const :tag Information Information) (const :tag Hint Hint))</code></p>
+<p><em>Default:</em> <code>Warning</code></p>
+<p>Severity level for typos diagnostics.
+Can be one of "Error","Warning", "Information", or "Hint".</p>
+<hr />
+<h3 id="lsp-typos-enable"><code>lsp-typos-enable</code><a class="headerlink" href="#lsp-typos-enable" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable or disable LSP Typos.</p>
+<hr />
+<h3 id="lsp-typos-path"><code>lsp-typos-path</code><a class="headerlink" href="#lsp-typos-path" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>nil</code></p>
+<p><em>Default:</em> <code>typos-lsp</code></p>
+<p>Path to typos-lsp executable.</p>
+<hr />
 
 <!-- Source file information -->
 
@@ -3825,7 +3880,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 4, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2025</span>
       
     
   </small>
